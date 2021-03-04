@@ -1,0 +1,63 @@
+.heroes
+{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-family: Verdana, serif;
+}
+
+.heroes div {
+    width: 270px;
+    height: 140px;
+    border-radius: 5px;
+    margin-top: 50px;
+}
+
+.heroes img {
+    height: 182px;
+    margin-top: -105px;
+    margin-left: 10px;
+    transform: scale(0.9);
+
+}
+
+.captain_america
+{
+    background: linear-gradient(to bottom, #4568dc, #b06ab3);
+}
+
+.iron_man
+{
+    background: linear-gradient(to bottom, #e52d27, #b31217);   
+}
+
+.black_widow
+{
+    background: linear-gradient(to right, #000, #61045f);
+}
+
+.spider_man
+{
+    background: linear-gradient(to bottom, #e52d27, #000);
+}
+
+.spider_man img {
+    margin-top: -80px;
+}
+
+h5
+{
+    text-align: right;
+    color: white;
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+h6
+{
+    text-align: right;
+    color: rgba(255, 255, 255, 0.5);
+    margin-right: 10px;
+    margin-top: -15px;
+    font-size: 9px;
+}

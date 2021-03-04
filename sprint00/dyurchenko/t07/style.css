@@ -1,0 +1,50 @@
+table {
+    background: linear-gradient(135deg, #6e0000, antiquewhite);
+    border: 4px;
+    text-align:center;
+    border-collapse:collapse;
+}
+
+th {
+    color: #ffe369;
+    background-color: rgba(110, 0, 0, 0.4);
+    border: 2px solid rgba(189, 195, 199, 0.05);
+    padding: 10px;
+}
+
+tr {
+    text-align: center;
+    border: 2px solid rgb(182, 174, 174);
+}
+
+td {
+    padding: 10px;
+    border: 2px solid rgba(189, 195, 199, 0.05);
+    color: midnightblue;
+    background-color: antiquewhite;
+    padding: 5px 50px;
+}
+
+#bat, #dd, #hu, #sm, #tf, #wol {
+    color: white;
+    background: darkred;
+}
+
+#ww, #th, #sup, #im, #gl, #cap {
+    background-color: rgba(143, 148, 251, 0.1);
+    color: white;
+}
+
+#link {
+    background-color:transparent;
+}
+
+a {
+    color:white;
+}
+
+#red {
+    background: darkred;
+    color: white;
+    border: 2px solid rgba(189, 195, 199, 0.05);
+}

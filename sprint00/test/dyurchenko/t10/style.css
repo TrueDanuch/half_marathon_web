@@ -1,0 +1,30 @@
+div label {
+    font-weight: 700;
+    font-family: 'Lato', bold;
+    font-size: 1.5em;
+    color: white;
+    background-color:dodgerblue;
+    padding:0px 25px;
+}
+
+div span {
+    font-weight: 400;
+    font-family: 'Lato', regular;
+    font-size: 2em;
+}
+
+div img {
+    padding:10px 0px;
+}
+
+div {
+    text-align: center;
+}
+
+span::after {
+    content:"\00B0";
+}
+
+.flex:hover {
+    box-shadow: 0 0 10px rgba(0,0,0,0.8);
+}

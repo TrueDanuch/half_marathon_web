@@ -1,0 +1,66 @@
+img
+{
+    height: 120px;
+    width: 120px;
+    border-radius: 25px;
+}
+
+table
+{
+    border-collapse: collapse;
+}
+
+#head
+{
+    background-color: black;
+    color: white;
+}
+
+#soul
+{
+    background-color:rgb(209, 123, 12);
+}
+
+#time
+{
+    background-color:rgb(21, 99, 14);
+}
+
+#space
+{
+    background-color:rgb(12, 58, 209);
+}
+
+#mind
+{
+    background-color:rgb(236, 233, 5);
+}
+
+#reality
+{
+    background-color:rgb(172, 30, 20);
+}
+
+#power
+{
+    background-color:rgb(94, 62, 170);
+}
+
+tr
+{
+    text-align: center;
+    border-collapse: collapse;
+    border: 2px solid rgb(182, 174, 174);
+}
+
+td
+{
+    padding: 10px 10px 10px 10px;
+    border: 2px solid rgb(182, 174, 174);
+}
+
+#link
+{
+    border: 1px solid rgb(182, 174, 174);
+    border-collapse: collapse;
+}
