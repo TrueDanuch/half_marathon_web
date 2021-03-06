@@ -1,0 +1,10 @@
+img {
+    height:650px;
+    float:left;
+}
+
+@media (max-width: 767px) {
+    .img, .p {
+        clear: both;
+    }
+}

@@ -1,0 +1,113 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.head {
+    color: deeppink;
+    margin-left: 350px;
+    font-size: 1.5em;
+    padding: 0px 10px;
+}
+
+.what {
+    color: gray;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+ul {
+    padding: 0px;
+    margin-bottom: 30px;
+}
+
+li {
+    list-style: none;
+    display: inline;
+}
+
+.frow, .srow, .trow {
+    display: flex;
+    justify-content: center;
+}
+
+.text {
+    display: flex;
+    padding: 10px;
+}
+
+.texts {
+    display: flex;
+    padding: 10px;
+}
+
+.checkbox-label {
+    border: 1px solid gray;
+    padding: 15px 30px;
+    margin: 0px 5px 0px 0px;
+    border-radius: 30px;
+    color: gray;
+}
+
+input[type="checkbox"] {
+    width: 0;
+    opacity: 0;
+    height: 0;
+}
+
+input[type="text"]:focus {
+    outline: none;
+}
+
+input:checked ~ label {
+    background-color: darkblue;
+    color: white;
+}
+
+input:checked ~ label::after {
+    content: "   \2713";
+    white-space: pre;
+}
+
+.job-details-label {
+    color: #868686;
+    border-bottom: 1px solid lightgray;
+    padding: 5px 15px;
+    width: 10%;
+}
+
+.job-details {
+    width: 100%;
+    border: 0px solid black;
+    border-bottom: lightgray 1px solid;
+}
+
+.name, .email {
+    width: 90%;
+    border: 0px solid black;
+    border-bottom: lightgray 1px solid;
+    margin: 0px 20px 0px 0px;
+}
+
+.email {
+    margin: 0px;
+}
+
+.button {
+    display: flex;
+    padding: 10px;
+}
+
+#send {
+    padding: 20px;
+    width: 100%;
+    background-color: deeppink;
+    border: none;
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+    transition: all 1s ease;
+}
+
+#send:hover {
+    background-color: rgb(128, 9, 72);
+}

@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Handbook</title>
+    <meta name="description" content="t04. Handbook">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="list">
+        <ul>
+            <li><a href="#html">HTML</a>
+                <ul>
+                    <li><a href="#block_elements">Block Element</a>s</li>
+                    <li><a href="#inline_elements">Inline Elements</a></li>
+                    <li><a href="#images">Images</a></li>
+                </ul>
+            </li>
+            <li><a href="#css">CSS</a>
+                <ul>
+                    <li><a href="#selectors">Selectors</a></li>
+                    <li><a href="#box_model">Box model</a></li>
+                    <li><a href="#tables">Tables</a></li>
+                </ul>
+            </li>
+            <li><a href="#web_protocols">Web Protocols</a>
+                <ul>
+                    <li><a href="#protocol">Protocol</a></li>
+                    <li><a href="#http-https">HTTP/HTTPS</a></li>
+                    <li><a href="#dns">DNS</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="html" id="html">
+        <h1>HTML</h1>
+        <div class="block_elements" id="block_elements">
+            <h1>Block Elements</h1>
+            <div class="el">
+                <p>
+                    div <br> 
+                    The &lt;div&gt; defines a division or a section in an HTML document<br>
+                    align, title. <br> 
+                    &lt;div&gt;...&lt;/div&gt; <br>
+                </p>
+            </div>
+            <div class="el">
+                <p>
+                    header <br>
+                    The &lt;header&gt; element represents a container for introductory content or a set of navigational links.<br>
+                    display. <br>
+                    &lt;header&gt;...&lt;/header&gt; <br>
+                </p>
+            </div>
+            <div class="el">
+                <p>
+                    h1 <br>
+                    The &lt;h1&gt; tag is used to defines the most important HTML heading.<br>
+                    display, font-size, margin, font-weight. <br>
+                    &lt;h1&gt;...&lt;/h1&gt; <br>
+                </p>
+            </div>
+            <div class="el">
+                <p>
+                    ol <br>
+                    The &lt;ol&gt; tag defines an ordered list. An ordered list can be numerical or alphabetical.<br>
+                    display, list-style-type, margin, padding.<br>
+                    &lt;ol&gt;...&lt;/ol&gt; <br>
+                </p>
+            </div>
+        </div>
+        <div class="inline_elements" id="inline_elements">
+            <h1>Inline Elements</h1>
+            <div class="el">
+                <p>
+                    a <br>
+                    The &lt;ol&gt; tag defines a hyperlink, which is used to link from one page to another.<br>
+                    color, cursor, text-decoration.<br>
+                    &lt;a&gt;...&lt;/a&gt; <br>
+                </p>
+            </div>
+            <div class="el">
+                <p>
+                    button <br>
+                    The &lt;button&gt; tag defines a clickable button.<br>
+                    color, border, text-decoration, padding, margin, cursor, display, etc.<br>
+                    &lt;button&gt;...&lt;/button&gt; <br>
+                </p>
+            </div>
+            <div class="el">
+                <p>
+                    input <br>
+                    The &lt;input&gt; tag specifies an input field where the user can enter data.<br>
+                    None CSS settings.<br>
+                    &lt;input&gt;...&lt;/input&gt; <br>
+                </p>
+            </div>
+            <div class="el">
+                <p>
+                    b <br>
+                    The &lt;b&gt; tag defines a hyperlink, which is used to link from one page to another.<br>
+                    color, cursor, text-decoration.<br>
+                    &lt;b&gt;...&lt;/b&gt; <br>
+                </p>
+            </div>
+        </div>
+        <div class="images" id="images">
+            <h1>Images</h1>
+            <div class="el">
+                <p>
+                    img <br>
+                    The &lt;img&gt; tag is used to embed an image in a web page.<br>
+                    width, height.<br>
+                    &lt;img&gt;...&lt;/img&gt; <br>
+                </p>
+            </div>
+            <div class="el">
+                <p>
+                    map <br>
+                    The &lt;map&gt; tag defines an image map. An image map is an image with clickable areas.<br>
+                    coords.<br>
+                    &lt;map&gt;...&lt;/map&gt; <br>
+                </p>
+            </div>
+            <div class="el">
+                <p>
+                    picture <br>
+                    The &lt;picture&gt; element gives web developers more flexibility in specifying image resources.<br>
+                    media, srcset.<br>
+                    &lt;picture&gt;...&lt;/picture&gt; <br>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="css" id="css">
+        <h1>CSS</h1>
+        <div class="selectors" id="selectors">
+            <h1>Selectors</h1>
+            <div class="el">
+                <p>
+                    element selector <br>
+                    The element selector selects HTML elements based on the element name.<br>
+                    <code>p {  text-align: center; color: red; }</code><br>
+                </p>
+            </div>
+            <div class="el">
+                <p>
+                    id selector <br>
+                    The id selector uses the id attribute of an HTML element to select a specific element.<br>
+                    <code>#para1 { text-align: center; color: red; }</code><br>
+                </p>
+            </div>
+            <div class="el">
+                <p>
+                    class selector <br>
+                    The class selector selects HTML elements with a specific class attribute.
+                    <code>.center { text-align: center; color: red; }</code><br>
+                </p>
+            </div>
+            <div class="el">
+                <p>
+                    universal selector <br>
+                    The universal selector (*) selects all HTML elements on the page.<br>
+                    <code>* {  text-align: center; color: blue; }</code><br>
+                </p>
+            </div>
+        </div>
+        <div class="box_model" id="box_model">
+            <h1>Box Model</h1>
+            <div class="el">
+                <p>
+                    margin <br>
+                    Clears an area outside the border. The margin is transparent<br>
+                    <code>div { margin: 20px; }</code><br>
+                </p>
+            </div>
+            <div class="el">
+                <p>
+                    padding <br>
+                    Clears an area around the content. The padding is transparent<br>
+                    <code>div { padding: 50px; }</code><br>
+                </p>
+            </div>
+            <div class="el">
+                <p>
+                    border <br>
+                    A border that goes around the padding and content<br>
+                    <code>div { border: 15px solid green; }</code><br>
+                </p>
+            </div>
+        </div>
+        <div class="tables" id="tables">
+            <h1>Tables</h1>
+            <div class="el">
+                <p>
+                    borders <br>
+                    To specify table borders in CSS, use the border property.<br>
+                    <code>table, th, td {  border: 1px solid black; }</code><br>
+                </p>
+            </div>
+            <div class="el">
+                <p>
+                    size <br>
+                    The width and height of a table are defined by the width and height properties.<br>
+                    <code>table {  width: 100%; } th { height: 70px; }</code><br>
+                </p>
+            </div>
+            <div class="el">
+                <p>
+                    aligment <br>
+                    The text-align property sets the horizontal alignment (like left, right, or center) of 
+                    the content in &lt;th&gt; or &lt;td&gt;.<br>
+                    <code>td { text-align: center; }</code><br>
+                </p>
+            </div>
+            <div class="el">
+                <p>
+                    style <br>
+                    To control the space between the border and the content in a table, use the padding 
+                    property on &lt;td&gt; and &lt;th&gt; elements.<br>
+                    <code>th, td { padding: 15px; text-align: left; }</code><br>
+                </p>
+            </div>
+            <div class="el">
+                <p>
+                    responsive <br>
+                    A responsive table will display a horizontal scroll bar if the screen is too small 
+                    to display the full content.<br>
+                    <code>&lt;div style="overflow-x:auto;"&gt;</code><br>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="web_protocols" id="web_protocols">
+        <h1>Web Protocols</h1>
+        <div class="protocol" id="protocol">
+            <h1>Protocol</h1>
+            <div class="el">
+                <p>
+                    Protocol <br>
+                    A communication protocol is a system of rules that allow two or more entities of a communications
+                    system to transmit information via any kind of variation of a physical quantity. The protocol
+                    defines the rules, syntax, semantics and synchronization of communication and possible error
+                    recovery methods. Protocols may be implemented by hardware, software, or a combination of both. <br>
+
+                </p>
+            </div>
+        </div>
+        <div class="http-https" id="http-https">
+            <h1>HTTP/HTTPS</h1>
+            <div class="el">
+                <p>
+                    HTTP <br>
+                    The Hypertext Transfer Protocol (HTTP) is an application layer protocol for distributed,
+                    collaborative, hypermedia information systems. HTTP is the foundation of data communication for
+                    the World Wide Web, where hypertext documents include hyperlinks to other resources that the user
+                    can easily access, for example by a mouse click or by tapping the screen in a web browser.<br>
+                    Development of HTTP was initiated by Tim Berners-Lee at CERN in 1989. Development of early HTTP
+                    Requests for Comments (RFCs) was a coordinated effort by the Internet Engineering Task Force (IETF)
+                    and the World Wide Web Consortium (W3C), with work later moving to the IETF.<br>
+                </p>
+            </div>
+            <div class="el">
+                <p>
+                    HTTPS <br> <br>
+                    Hypertext Transfer Protocol Secure (HTTPS) is an extension of the Hypertext Transfer Protocol
+                    (HTTP). It is used for secure communication over a computer network, and is widely used on the
+                    Internet. In HTTPS, the communication protocol is encrypted using Transport Layer Security
+                    (TLS) or, formerly, Secure Sockets Layer (SSL). The protocol is therefore also referred to as HTTP
+                    over TLS, or HTTP over SSL.<br>
+                    The principal motivations for HTTPS are authentication of the accessed website, and protection of
+                    the privacy and integrity of the exchanged data while in transit. It protects against
+                    man-in-the-middle attacks, and the bidirectional encryption of communications between a client and
+                    server protects the communications against eavesdropping and tampering. The authentication
+                    aspect of HTTPS requires a trusted third party to sign server-side digital certificates. This was
+                    historically an expensive operation, which meant fully authenticated HTTPS connections were usually
+                    found only on secured payment transaction services and other secured corporate information systems
+                    on the World Wide Web. In 2016, a campaign by the Electronic Frontier Foundation with the support of
+                    web browser developers led to the protocol becoming more prevalent. HTTPS is now used more often
+                    by web users than the original non-secure HTTP, primarily to protect page authenticity on all types
+                    of websites; secure accounts; and to keep user communications, identity, and web browsing
+                    private.<br>
+                </p>
+            </div>
+        </div>
+        <div class="dns" id="dns">
+            <h1>DNS</h1>
+            <div class="el">
+                <p>
+                    DNS<br> <br>
+                    The Domain Name System (DNS) is the phonebook of the Internet. Humans access information online
+                    through domain names, like nytimes.com or espn.com. Web browsers interact through Internet Protocol
+                    (IP) addresses. DNS translates domain names to IP addresses so browsers can load Internet resources.
+
+                    Each device connected to the Internet has a unique IP address which other machines use to find the
+                    device. DNS servers eliminate the need for humans to memorize IP addresses such as 192.168.1.1 (in
+                    IPv4), or more complex newer alphanumeric IP addresses such as 2400:cb00:2048:1::c629:d7a2 (in
+                    IPv6).<br>
+                </p>
+            </div>
+
+            <div class="el">
+                <p>
+                    IP<br>
+                    An IP address is a unique address that identifies a device on the internet or a local network. IP
+                    stands for "Internet Protocol," which is the set of rules governing the format of data sent via the
+                    internet or local network. <br>
+                    In essence, IP addresses are the identifier that allows information to be sent between devices on a
+                    network: they contain location information and make devices accessible for communication. The
+                    internet needs a way to differentiate between different computers, routers, and websites. IP
+                    addresses provide a way of doing so and form an essential part of how the internet works. <br>
+                    To find ip of site we need: <br>
+                    1. Open console <br>
+                    2. ping site <br>
+                    For example: <br>
+                    google.com - 172.217.18.78 <br>
+                    google.com.ua - 172.217.20.3 <br>
+                    ucode.world - 207.154.232.87
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

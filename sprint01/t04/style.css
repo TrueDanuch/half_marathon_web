@@ -1,0 +1,47 @@
+h1 {
+    text-align: center;
+    position: relative;
+}
+
+.html {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.css {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.web_protocols {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.el {
+    display: inline-block;
+    margin: 8px auto;
+    border: 1px solid grey;
+    padding: 8px 8px;
+}
+
+@media (min-width: 320px) {
+    .el {
+        width: calc(100% - 20px);
+    }
+}
+
+@media (min-width: 768px) {
+    .el {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (min-width: 1024px) {
+    .el {
+        width: calc(25% - 20px);
+    }
+}

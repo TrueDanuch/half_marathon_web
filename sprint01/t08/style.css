@@ -1,0 +1,23 @@
+.circle {
+    background-color: green;
+    clip-path: circle(25%);
+    height: 200px;
+    transition: clip-path 1s;
+    width: 200px;
+    border-radius: 100%;
+    animation-name: move;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transition: all 2s ease;
+}
+
+.circle:hover {
+    background-color:red;
+}
+
+@keyframes move {
+    from {
+        margin-left: calc(100% - 200px);
+    }
+}
