@@ -1,0 +1,43 @@
+h1 {
+    text-align:center;
+}
+
+#img {
+    margin: -150px 0px;
+    transform: scale(0.5);
+    display:flex;
+    justify-content:center;
+}
+
+input[type="button"]  {
+    border-radius: 15px;
+    background-color: blue;
+    color: white;
+}
+
+input {
+    margin: 0px 10px;
+}
+
+#human_status, #superhero_status {
+    display: block;
+}
+
+#superhero_button, #human_status, #superhero_status {
+    text-align: center;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+#buttons, #superhero_abilities {
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#info {
+    margin-top: 15px;
+    margin-left: 15px;
+}

@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Upgrade Human</title>
+    <meta name="description" content="t03. Upgrade Human">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <h1>Upgrade Human</h1>
+
+    <div id="img">
+        <img alt="human" id="image" src="assets/images/human.jpg">
+    </div>
+    
+    <div id="human_info">
+        <div id="buttons">
+            <input type="number" id="seconds" min="1" max="120">
+            <input type="button" id="sleep_button" value="Sleep for" onclick="human.sleepFor()">
+            <input type="button" id="feed_button" value="Feed" onclick="human.feed()">
+        </div>
+        <div id="human_status">I'm awake up!</div>
+        <div id="info">
+            <div><span>Firstname: </span><span id="firstName"></span></div>
+            <div><span>Lastname: </span><span id="lastName"></span></div>
+            <div><span>Gender: </span><span id="gender"></span></div>
+            <div><span>Age: </span><span id="age"></span></div>
+            <div><span>Calories: </span><span id="calories"></span></div>
+        </div>
+        <div id="superhero_button">
+            <input type="button" id="superheroButton" value="Turn into superhero" onclick="turnIntoSuperheroButton(human)">
+        </div>
+    </div>
+
+    <div id="superhero_info" style="display: none;" disabled>
+        <div id="buttons">
+            <input type="number" id="seconds_super" min="1" max="120">
+            <input type="button" id="sleep_button_super" value="Sleep for" onclick="superhero.sleepFor()">
+            <input type="button" id="feed_button_super" value="Feed" onclick="superhero.feed()">
+        </div>
+        <div id="superhero_abilities">
+            <input type="button" id="fly_button" value="Fly" onclick="superhero.fly()">
+            <input type="button" id="fight_button" value="Fight with evil" onclick="superhero.fightWithEvil()">
+        </div>
+        <div id="superhero_status">I'm awake up!</div>
+        <div id="info">
+            <div><span>Firstname: </span><span id="firstNameSuper"></span></div>
+            <div><span>Lastname: </span><span id="lastNameSuper"></span></div>
+            <div><span>Gender: </span><span id="genderSuper"></span></div>
+            <div><span>Age: </span><span id="ageSuper"></span></div>
+            <div><span>Calories: </span><span id="caloriesSuper"></span></div>
+        </div>
+    </div>
+
+</body>
+
+</html>
