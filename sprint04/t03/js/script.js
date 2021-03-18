@@ -1,35 +1,30 @@
-var slideIndex = 1;
-showSlides(slideIndex);
+var slideshowIndex = 1;
+showSlides(slideshowIndex);
 
 function plusSlides(n) { 
-    slideIndex += n
-    showSlides(slideIndex);
+    slideshowIndex += n
+    showSlides(slideshowIndex);
 }
 
 t = setInterval(function(){
-    showSlides(++slideIndex)
+    showSlides(++slideshowIndex)
 }, 3000)
 
 function showSlides(n) {
     let i;
     let slides = document.getElementsByClassName("mySlides");
-    let dots = document.getElementsByClassName("dot");
 
     if (n > slides.length) {
-        slideIndex = 1
+        slideshowIndex = 1
     }
 
     if (n < 1) {
-        slideIndex = slides.length
+        slideshowIndex = slides.length
     }
 
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
 
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-
-    slides[slideIndex - 1].style.display = "block";
+    slides[slideshowIndex - 1].style.display = "block";
 }

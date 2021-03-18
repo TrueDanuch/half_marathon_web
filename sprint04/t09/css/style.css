@@ -1,0 +1,42 @@
+.main {
+    max-width: 500px;
+	margin: 50px auto;
+    font-size: 1em;
+}
+
+.buttons {
+    display: flex;
+	justify-content: space-between;
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: rgb(59, 133, 230);
+    border: none;
+    border-radius: 5px;
+    margin: 0px 20px -10px 0px;
+    color: white;
+}
+
+.clear {
+    background-color: rgba(224, 217, 217, 0.61);
+    color: black;
+}
+
+.input, .history{
+    padding: 20px;
+    background-color: rgba(224, 217, 217, 0.61);
+}
+
+.history {
+    margin-top: 20px;
+}
+
+label {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+#text_input, #history {
+    width: 100%;
+}

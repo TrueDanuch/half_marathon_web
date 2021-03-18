@@ -18,7 +18,7 @@ function filmsList() {
       revenge, John will immediately unleash a carefully orchestrated maelstrom of destruction against the sophisticated kingpin, Viggo 
       Tarasov, and his family, who are fully aware of his lethal capacity. Now, only blood can quench the boogeyman's thirst for 
       retribution.`,
-      poster: "assets/images/john_wick.jpg",
+      poster: "https://upload.wikimedia.org/wikipedia/en/9/98/John_Wick_TeaserPoster.jpg",
     },
     endgame: {
       id: 2,
@@ -39,7 +39,7 @@ function filmsList() {
       made as they prepare for the ultimate final showdown with Thanos,
       which will result in the heroes fighting the biggest battle they
       have ever faced.`,
-      poster: "assets/images/avengers_endgame.jpg",
+      poster: "https://upload.wikimedia.org/wikipedia/en/0/0d/Avengers_Endgame_poster.jpg",
     },
     inception: {
       id: 3,
@@ -58,7 +58,7 @@ function filmsList() {
       called "inception", which is not easy to do. Cobb is hesitant to do it, but when the man offers to help Cobb go back to his 
       children, Cobb agrees. So he assembles his team but when they begin, there are things Cobb didn't tell his team that could 
       jeopardize the job, and when they occur, they're not sure if they should continue.`,
-      poster: "assets/images/inception.jpg",
+      poster: "https://upload.wikimedia.org/wikipedia/en/2/2e/Inception_%282010%29_theatrical_poster.jpg",
     }
   };
   let film_name = document.getElementsByClassName("name");

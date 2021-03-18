@@ -1,0 +1,70 @@
+.main {
+    max-width: 500px;
+	margin: 50px auto;
+    font-size: 1em;
+}
+
+.buttons {
+    display: flex;
+	justify-content: space-between;
+}
+
+button {
+    padding: 10px 25px;
+    background-color: rgb(59, 133, 230);
+    border: none;
+    border-radius: 5px;
+    margin: 0px 20px 20px 0px;
+    color: white;
+}
+
+#word_replace {
+    margin: 0px;
+    margin-bottom: 20px;
+}
+
+label {
+    color: rgba(3, 42, 100, 0.767);
+}
+
+.input {
+    padding: 20px;
+    background-color: rgba(224, 217, 217, 0.61);
+}
+
+.word-input label {
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.text-oneline {
+    width: 100%;
+    border-radius: 5px;
+    border: 2px solid rgb(0, 140, 255);
+}
+
+.text-input label {
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.text-multline {
+    width: 100%;
+    border-radius: 5px;
+    border: 2px solid rgb(0, 140, 255);
+}
+
+.output {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgba(224, 217, 217, 0.61);
+}
+
+.output label {
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.text-output {
+    width: 100%;
+}
