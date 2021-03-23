@@ -1,0 +1,72 @@
+body {
+  background-image: url("https://i.kym-cdn.com/photos/images/original/001/479/169/c57.gif");
+  background-size: cover;
+  height: 100vh;
+  padding: auto;
+  margin: 0;
+  font-family: sans-serif;
+}
+#dark_milos {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0, 0.3);
+}
+#container {
+  width: 1000px;
+  height: 730px;
+  margin: auto;
+  margin-top: 200px;
+  background-color: rgb(52, 52, 52, 0.7);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+input {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  opacity: 0.6;
+  font-size: 72px;
+  text-align: right;
+  margin: 10px;
+  width: calc(100% - 28px);
+  border-radius: 12px;
+}
+#buttons_div {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 80px;
+  text-align: center;
+}
+#table1 {
+  table-layout: fixed;
+  width: calc(100% - 20px);
+  /* margin: auto; */
+  margin-top: -5px;
+  margin-left: 10px;
+}
+#systemTable {
+  font-size: 32px;
+}
+td {
+  margin: auto;
+  height: 112px;
+}
+td:hover:not(#noHover) {
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
+  transition: .2s ease-in-out;
+}
+.unselectable {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* Internet Explorer/Edge */
+  user-select: none;           /* Non-prefixed version, currently */
+}
+img {
+  -webkit-filter: invert(1);
+  filter: invert(1);
+  margin-top: 10px;
+  margin-right: 10px;
+}
