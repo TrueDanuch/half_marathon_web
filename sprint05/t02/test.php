@@ -15,3 +15,4 @@ checkDivision(58);
 
 echo "\n*** Range is ... - ... checkDivision() ***\n";
 checkDivision();
+?>
