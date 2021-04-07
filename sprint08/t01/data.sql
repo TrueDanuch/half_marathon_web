@@ -9,4 +9,4 @@ INSERT INTO heroes (name, description, race, class_role)
 ('Ronan', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi a.', 'Kree', 'tankman'),
 ('Iron Fist', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi a.', 'Human', 'dps'),
 ('Wanda Maximoff', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi a.', 'Human mutate', 'healer'),
-('Ivan Vanko', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi a.', 'Human', 'tankman')
+('Ivan Vanko', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi a.', 'Human', 'tankman');
