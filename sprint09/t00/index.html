@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Registration</title>
+    <meta name="description" content="t00. Registration">
+    <link type="text/css" href="style.css" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <h1>Registration</h1>
+    <div class="main">
+        <form method="post" action="index.php" onsubmit="checkPass()">
+            <div class="input-group">
+                <label>Login:</label>
+                <input type="text" name="login" id="login">
+            </div>
+            <div class="input-group">
+                <label>Password:</label>
+                <input type="password" name="password" id="password" required>
+            </div>
+            <div class="input-group">
+                <label>Confirm Password:</label>
+                <input type="password" name="cPassword" id="cPassword" required>
+            </div>
+            <div class="input-group">
+                <label>Full Name:</label>
+                <input type="text" name="full_name" id="full_name">
+            </div>
+            <div class="input-group">
+                <label>Email Address:</label>
+                <input type="email" name="email_address" id="email_address">
+            </div>
+            <div class="input-group">
+                <button type="submit" class="btn" name="reg_user" id="reg_user">Register</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
