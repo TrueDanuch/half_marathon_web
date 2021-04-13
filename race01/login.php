@@ -23,16 +23,16 @@
         die();
     }
 
-    $Login = new Model();
+    $User = new Model();
     if (!$login){
         $login = $_POST["login"];
     }
 
     if (!$password){
-        $password = $_POST["password"];
+        $password = md5($_POST["password"]);
     }
 
-    if (!$Login->checkLogin($login, $password)){
+    if (!$User->checkLogin($login, $password)){
         echo(file_get_contents("main.html"));
         echo("<script>alert('Login or password is wrong!')</script>");
         die();
@@ -41,8 +41,8 @@
     $_SESSION["login"] = $login;
     $_SESSION["password"] = $password;
     echo("<script>alert('You have sign in successfully!')</script>");
-    echo("Login: ".$Login->login.
-    "<br>Full name: ".$Login->full_name.
-    "<br>Email: ".$Login->email);
+    echo("Login: ".$User->login.
+    "<br>Full name: ".$User->full_name.
+    "<br>Email: ".$User->email);
     echo("<form action='login.php' method='POST'><input type='text' name='logout' value='1' style='display:none;'><input type='submit' value='Log out'></form>")
 ?>

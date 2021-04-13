@@ -32,30 +32,31 @@ class Model {
     }
 
     public function checkLogin($login, $pass=null){
-        $query1 = "SELECT * FROM `users` WHERE `login`='".$this->connection->escape_string($login)."' AND `password`='$pass'";
-        $query2 = "SELECT `id` FROM `users` WHERE `login`='".$this->connection->escape_string($login)."'";
-        if($pass){
+        $query1 = "SELECT * FROM users WHERE login='".$this->connection->escape_string($login)."' AND password='$pass'";
+        $query2 = "SELECT id FROM users WHERE login='".$this->connection->escape_string($login)."'";
+        if($pass) {
             $result = $this->connection->query($query1);
-        } else {
+        }
+        else {
             $result = $this->connection->query($query2);
         }
-        $result = $result->fetch_all()[0];
+        $result = $result->fetch_all();
         if ($pass === null)
-            if($result[0] == 1){
+            if($result[0] == 1) {
                 return true;
-            } else {
+            }
+            else {
                 return false;
             }
-        if (!$result){
+        if (!$result)
             return null;
-        }
-
         $result = $result[0];
         $this->id = $result[0];
         $this->login = $result[1];
         $this->password = $result[2];
         $this->full_name = $result[3];
         $this->email = $result[4];
+        return true;
     }
 
     public function checkEmail($email){

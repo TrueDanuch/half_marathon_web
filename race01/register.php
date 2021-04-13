@@ -6,10 +6,10 @@
         die();
     $Registration = new Model();
     $login = $_POST["login"];
-    $password = $_POST["password"];
+    $password = md5($_POST["password"]);
     $full_name = $_POST["full_name"];
     $email = $_POST["email"];
-    if ($Registration->checkLogin($login)) {
+    if ($Registration->checkLogin($login, $password)) {
         echo("<script>alert('Such login is already exist')</script>");
         die();
     }

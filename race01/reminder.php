@@ -26,7 +26,7 @@
     }
     $Reminder->findById($id);
     $newPass = randomPassword();
-    $Reminder->password = $newPass;
+    $Reminder->password = md5($newPass);
     $Reminder->updateUser();
     echo("<script>alert('Email has been sent to your email!')</script>");
     mail($email, "Password reminder", "Your new password: \n".$newPass);
