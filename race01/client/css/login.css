@@ -15,14 +15,6 @@ h1 {
     margin: 50px auto 0px;
 }
 
-form, .content {
-    width: 30%;
-    margin: 0px auto;
-    padding: 20px;
-    border: 1px solid #000000;
-    background: white;
-    border-radius: 0px 0px 10px 10px;
-}
 .input-group {
     margin: 10px 0px 10px 0px;
 }
@@ -61,13 +53,5 @@ form, .content {
 }
 
 .fight {
-    display: none;
-}
-
-.test1 {
-    display: none;
-}
-
-.test2 {
     display: none;
 }
