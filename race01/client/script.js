@@ -1,4 +1,4 @@
-let socket = io('http://10.11.3.4:7070');
+let socket = io('http://10.11.11.5:7060');
 
 socket.on('connection', () => {
   console.log('--> Connected to server.')
@@ -52,16 +52,23 @@ function regUser() {
     alert("Passwords does not match");
     
   }
-  socket.emit('check_login', {login: loginUser.value})
-  socket.on('check_login_result', (data) => {
-    console.log(data)
-  })
+  else {
+    socket.emit('check_login', {login: loginUser.value})
+    socket.on('check_login_result', (data) => {
+      console.log(data)
+    })
+    socket.emit('try_register', {login: loginReg.value, password_hash: passReg.value});
+    socket.on('register_result', (data) => {
+      console.log(data)
+      if(data == true){
+        loginUser.value = loginReg.value;
+        passUser.value = passReg.value;
+        changePage('login');
+      }
+    })
+    
+  }
   
-  socket.emit('try_register', {login: loginReg.value, password_hash: passReg.value});
-  socket.on('register_result', (data) => {
-    console.log(data)
-  })
-  changePage('login');
 }
 
 let loginUser = document.getElementById("login2");
@@ -72,14 +79,18 @@ function checkUser(){
   socket.emit('check_login', {login: loginUser.value})
   socket.on('check_login_result', (data) => {
     console.log(data)
+    if(data == true){
+      socket.emit('try_login', {login: loginUser.value, password_hash: passUser.value});
+      socket.on('login_result', (data) => { 
+        console.log(data)
+        if(data == true){
+          loginUser.value = "";
+          passUser.value = "";
+          changePage('waiting-room');
+        }
+      })
+    }
   })
-  socket.emit('try_login', {login: loginUser.value, password_hash: passUser.value});
-  socket.on('login_result', (data) => { 
-    console.log(data)
-  })
-  loginUser.value = "";
-  passUser.value = "";
-  changePage('waiting-room');
 }
 
 function logoutUser(){
