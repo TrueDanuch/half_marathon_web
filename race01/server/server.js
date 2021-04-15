@@ -1,5 +1,5 @@
 const port = 7070
-const host = '10.11.4.6'
+const host = '10.11.3.4'
 exports.host = host
 
 const http = require('http').createServer()

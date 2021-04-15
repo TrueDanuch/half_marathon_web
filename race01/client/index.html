@@ -10,8 +10,8 @@
 </head>
 
 <body>
-  <div class="reg">
-    <h1>Registration</h1>
+    <div class="reg">
+        <h1>Registration</h1>
         <div class="input-group">
             <label>Login:</label>
             <input type="text" name="login" id="login" required>
@@ -28,25 +28,38 @@
             <button type="submit" class="btn" onclick="regUser()">Register</button>
             <button onclick="changePage('login')" class="btn">Have an account?</button>
         </div>
-  </div>
-  <div class="login">
-      <h1>Sign in</h1>
-          <div class="input-group">
-              <label>Login:</label>
-              <input type="text" name="login" id="login2" required>
-          </div>
-          <div class="input-group">
-              <label>Password:</label>
-              <input type="password" name="password" id="password2" pattern='^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$' required>
-          </div>
-          <div class="input-group">
-              <button type="submit" class="btn" onclick="checkUser()">Sign In</button>
-              <button onclick="changePage('reg')" class="btn">Need an account?</button>
-              <button onclick="change()" class="btn" id="btn">New HTML</button>
-          </div>
-  </div>
+    </div>
+    <div class="login">
+        <h1>Sign in</h1>
+        <div class="input-group">
+            <label>Login:</label>
+            <input type="text" name="login" id="login2" required>
+        </div>
+        <div class="input-group">
+            <label>Password:</label>
+            <input type="password" name="password" id="password2" pattern="[a-zA-Z0-9]+" required>
+        </div>
+        <div class="input-group">
+            <button type="submit" class="btn" onclick="checkUser()">Sign In</button>
+            <button onclick="changePage('reg')" class="btn">Need an account?</button>
+        </div>
+    </div>
+    <div class="waiting-room">
+        <h1>Waiting Room</h1>
+        <div class="input-group">
+            <button onclick="logoutUser()" class="btn">Logout</button>
+            <button onclick="changePage('fight')" class="btn">Fight</button>
+        </div>
+    </div>
+    <div class="fight">
+        <h1>Fight</h1>
+        <div class="input-group">
+            <button onclick="logoutUser()" class="btn">Logout</button>
+            <button onclick="changePage('waiting-room')" class="btn">Return to menu</button>
+        </div>
+    </div>
 
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
