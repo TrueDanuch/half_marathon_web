@@ -1,4 +1,4 @@
-const port = 7060
+const port = 7050
 const host = '10.11.11.5'
 exports.host = host
 

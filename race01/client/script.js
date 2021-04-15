@@ -1,4 +1,4 @@
-let socket = io('http://10.11.11.5:7060');
+let socket = io('http://10.11.11.5:7050');
 
 socket.on('connection', () => {
   console.log('--> Connected to server.')
@@ -49,8 +49,7 @@ function regUser() {
   console.log(passReg.value);
   console.log(passConf.value);
   if(passReg.value !== passConf.value){
-    alert("Passwords does not match");
-    
+    console.log("Passwords does not match");
   }
   else {
     socket.emit('check_login', {login: loginUser.value})
@@ -65,14 +64,16 @@ function regUser() {
         passUser.value = passReg.value;
         changePage('login');
       }
+      else {
+        console.log("Such login already exist");
+      }
     })
-    
   }
-  
 }
 
 let loginUser = document.getElementById("login2");
 let passUser = document.getElementById("password2");
+
 function checkUser(){
   console.log(loginUser.value);
   console.log(passUser.value);
@@ -88,7 +89,13 @@ function checkUser(){
           passUser.value = "";
           changePage('waiting-room');
         }
+        else {
+          console.log("Incorrect password");
+        }
       })
+    }
+    else {
+      console.log("Such login already exist");
     }
   })
 }
